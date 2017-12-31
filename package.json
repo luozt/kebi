@@ -1,0 +1,30 @@
+{
+  "name": "kebi",
+  "version": "1.0.0",
+  "description": "kebi npm module for kobe!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luozt/kebi.git"
+  },
+  "files": [
+    "README.md",
+    "index.js",
+    "start.js",
+    "test.html"
+  ],
+  "keywords": [
+    "kebi",
+    "kobe"
+  ],
+  "author": "LUOZHITAO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luozt/kebi/issues"
+  },
+  "homepage": "https://github.com/luozt/kebi#readme"
+}
