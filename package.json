@@ -1,6 +1,6 @@
 {
   "name": "kebi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "kebi npm module for kobe!",
   "main": "index.js",
   "scripts": {
