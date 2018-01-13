@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm start",
     "postinstall": "npm start"
   },
   "repository": {
