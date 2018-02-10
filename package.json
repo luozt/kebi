@@ -1,31 +1,41 @@
 {
   "name": "kebi",
   "version": "1.0.4",
-  "description": "kebi npm module for kobe!",
+  "description": "Kebi's project!",
   "main": "index.js",
+  "bin": {
+    "kebi": "bin/kebi.js"
+  },
   "scripts": {
-    "start": "node start.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npm start"
+    "precommit": "lint-staged",
+    "test": "node bin/kebi.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "tslint --fix",
+      "prettier --parser babylon --single-quote --no-semi --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luozt/kebi.git"
   },
-  "files": [
-    "README.md",
-    "index.js",
-    "start.js",
-    "test.html"
-  ],
   "keywords": [
     "kebi",
-    "kobe"
+    "luozt"
   ],
-  "author": "LUOZHITAO",
+  "author": "luozt",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luozt/kebi/issues"
   },
-  "homepage": "https://github.com/luozt/kebi#readme"
+  "homepage": "https://github.com/luozt/kebi#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1"
+  }
 }

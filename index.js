@@ -1,12 +1,6 @@
-var fs = require('fs');
+var KEBI_URL = require('./config').issuesUrl
+var openUrl = require('./utils/open-url')
 
-module.exports = {
-  test: function() {
-    console.log('kebi!'+new Date());
-  },
-  getContent: function() {
-    var content = fs.readFileSync('./test.html').toString();
-    return content;
-  }
-};
-
+module.exports = function() {
+  return openUrl(KEBI_URL)
+}
